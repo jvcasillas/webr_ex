@@ -1,0 +1,29 @@
+---
+title: "webr example"
+format: revealjs
+filters:
+  - webr
+---
+
+```{webr-r}
+mod <- lm(mpg ~ drat, data = mtcars)
+summary(mod)
+```
+
+---
+
+## How?
+
+- Run `quarto add coatless/quarto-webr` from terminal
+- Add to yaml front matter:  
+```
+filters:
+  - webr
+```
+- Use `{web-r}` chunk:  
+````
+```{webr-r}
+2 + 2
+```
+````
+- Info here: https://github.com/coatless/quarto-webr
